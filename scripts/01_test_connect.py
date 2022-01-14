@@ -46,16 +46,14 @@ arm_and_takeoff(10)
 vehicle.airspeed = 7
 
 #-- Go to wp1
-print ("go to wp1")
-wp1 = LocationGlobalRelative(35.9872609, -95.8753037, 10)
+print ("Fliege zum Wegpunkt")
+wp1 = LocationGlobalRelative(50, 50, 10)
 
 vehicle.simple_goto(wp1)
 
-#--- Here you can do all your magic....
 time.sleep(30)
 
-#--- Coming back
-print("Coming back")
+print("Fliege zurueck")
 vehicle.mode = VehicleMode("RTL")
 
 time.sleep(20)
